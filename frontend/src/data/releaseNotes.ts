@@ -63,13 +63,20 @@ export const RELEASES: Release[] = [
     date: '2026-06-15T00:00:00Z',
     title: 'Objective Command Center layout fix',
     internal: true,
-    items: [{
-      category: 'fix',
-      title: 'Objectives moved to compact right-rail panel',
-      description: 'The Objective Command Center no longer renders as large horizontal cards in the center column. Official Objectives, Active Farms, and Member Interest are now shown as compact rows in the right-side Goals & Objectives panel, keeping the Overview to one screen at 1080p.',
-      pr: 137,
-      prTitle: 'fix(overview): compact Goals & Objectives right-rail, remove center-column objective feed',
-    }],
+    items: [
+      {
+        category: 'fix',
+        title: 'Objectives moved to compact right-rail panel',
+        description: 'The Objective Command Center no longer renders as large horizontal cards in the center column. Official Objectives, Active Farms, and Member Interest are now shown as compact rows in the right-side Goals & Objectives panel, keeping the Overview to one screen at 1080p.',
+        pr: 137,
+        prTitle: 'fix(overview): compact Goals & Objectives right-rail, remove center-column objective feed',
+      },
+      {
+        category: 'fix',
+        title: 'Notification center refreshes on open; badge counts release notes',
+        description: 'The notification panel now fetches fresh server notifications every time it opens, preventing stale unread counts mid-session. The avatar and bell badge in UserMenu now includes unread release-note (synthetic) notifications so the count matches what the panel shows.',
+      },
+    ],
   },
   // ── v1.24.0 ──────────────────────────────────────────────────────────────
   {
