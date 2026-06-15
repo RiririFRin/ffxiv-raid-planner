@@ -76,6 +76,11 @@ export const RELEASES: Release[] = [
         title: 'Notification center refreshes on open; badge counts release notes',
         description: 'The notification panel now fetches fresh server notifications every time it opens, preventing stale unread counts mid-session. The avatar and bell badge in UserMenu now includes unread release-note (synthetic) notifications so the count matches what the panel shows.',
       },
+      {
+        category: 'fix',
+        title: 'BiS preset targets now auto-import gear data from XIVGear',
+        description: 'Presets added from the "Add Preset" tab now automatically fetch full gear slot data (item names, iLvl, materia) from XIVGear after being created. Purpose is now derived from the preset category instead of always defaulting to Savage. The refresh button in the Saved tab is also now shown for preset targets with URLs.',
+      },
     ],
   },
   // ── v1.24.0 ──────────────────────────────────────────────────────────────
