@@ -78,6 +78,16 @@ export const RELEASES: Release[] = [
       },
       {
         category: 'fix',
+        title: 'Activity log respects anonymous privacy preference',
+        description: 'Events written to the static activity log now use each member\'s "Anonymous activity" preference. Previously the backend always wrote entries as "named" regardless of the toggle. The toggle in the user menu now correctly controls whether your name appears in the activity feed.',
+      },
+      {
+        category: 'fix',
+        title: 'Webhook failures notify leads and show inline status',
+        description: 'When a Discord webhook delivery fails, group leads and owners now receive a webhook_failure notification with the HTTP error. The Integrations settings panel also shows the HTTP status and error text of the most recent failed delivery directly beneath the webhook status chip.',
+      },
+      {
+        category: 'fix',
         title: 'BiS preset targets now auto-import gear data from XIVGear',
         description: 'Presets added from the "Add Preset" tab now automatically fetch full gear slot data (item names, iLvl, materia) from XIVGear after being created. Purpose is now derived from the preset category instead of always defaulting to Savage. The refresh button in the Saved tab is also now shown for preset targets with URLs.',
       },
